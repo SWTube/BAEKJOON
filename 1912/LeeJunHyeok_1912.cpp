@@ -26,7 +26,7 @@ int main() {
 			cal[i] = 0;
 			dp[i] = dp[i - 1];
 		}
-		if (dp[i] < cal[i]) {;
+		if (dp[i] < cal[i]) {
 			dp[i] = max(dp[i - 1] ,arr[i]);
 		}
 	}
